@@ -1,0 +1,30 @@
+// Colors
+@import '../../Vars.scss';
+
+.hide-menu {
+  width: 73px;
+}
+
+.drawer {
+  width: 240px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.drawer-open {
+  width: 240px;
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+
+.drawer-close {
+  width: 57px;
+  overflow-x: hidden;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+
+.item-active {
+  color: $base-color-marked;
+  &:visited {
+    color: $base-color-marked;
+  }
+}
